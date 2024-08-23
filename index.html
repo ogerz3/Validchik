@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="flex justify-center items-center h-[100vh] bg-violet-700">
+        <div class="flex  items-center w-[50%] bg-violet-400 p-10 rounded-xl flex-col gap-5">
+            <div class="flex w-full items-center gap-5">
+                <div class="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center p-[20px]">
+                    <select class="select select-primary w-full max-w-xs">
+                        <option disabled selected>Valyutani Tanlang</option>
+                        <option value="RUB">Rubil</option>
+                        <option value="UZS">So'm</option>
+                        <option value="USD">Qogoz</option>
+                        <option value="KZT">Tanga</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-active btn-primary">Change</button>
+                <div class="card bg-base-300 rounded-box grid h-32 flex-grow place-items-center p-[20px]">
+                    <select class="select select-primary w-full max-w-xs">
+                        <option disabled selected>Valyutani Tanlang</option>
+                        <option value="RUB">Rubil</option>
+                        <option value="UZS">So'm</option>
+                        <option value="USD">Qogoz</option>
+                        <option value="KZT">Tanga</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <p>Значение: <span id="Value"></span></p>
+                <input id="Range"  type="range" min="0" max="10000" value="100" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
+
+                <p class="text-[30px]"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
